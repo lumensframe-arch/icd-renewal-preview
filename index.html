@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>ICD 홈페이지 리뉴얼 시안</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#020812;--panel:#0A1424;--line:#1A2A44;--fg:#EEF3F8;--muted:#A9B8CB;--accent:#00AEEF;--sans:'Roboto','Noto Sans KR',system-ui,sans-serif;--mono:'Roboto Mono',ui-monospace,monospace;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-height:1.6}
+.wrap{max-width:1200px;margin:0 auto;padding-block:72px 56px;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:48px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;color:var(--accent)}
+h1{margin:10px 0 0;font-size:clamp(32px,5vw,56px);line-height:1.1;font-weight:700;letter-spacing:-.02em;text-wrap:balance}
+.lead{margin:16px 0 0;font-size:18px;color:var(--muted);max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.card{display:flex;flex-direction:column;gap:14px;color:inherit;text-decoration:none;min-width:0}
+.thumb{position:relative;aspect-ratio:16/10;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--panel)}
+.thumb img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s ease}
+.card:hover .thumb img{transform:scale(1.03)}
+.card:focus-visible{outline:none}.card:focus-visible .thumb{outline:2px solid var(--accent);outline-offset:3px}
+.no{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.08em}
+.name{font-size:20px;font-weight:700;line-height:1.35}
+.desc{font-size:15px;color:var(--muted)}
+.note{border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+.note p{margin:0;max-width:62ch}
+@media (prefers-reduced-motion: reduce){.thumb img{transition:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="eyebrow">ICD WEBSITE RENEWAL · DESIGN DRAFT</div>
+    <h1>㈜아이씨디 홈페이지 리뉴얼 시안</h1>
+    <p class="lead">각 시안을 누르면 실제 웹사이트처럼 둘러볼 수 있습니다. PC와 휴대폰에서 모두 열리며, 휴대폰에서는 모바일 화면으로 바뀝니다.</p>
+  </header>
+
+  <section class="grid" aria-label="시안 목록">
+    <a class="card" href="home-02.html">
+      <span class="thumb"><img src="assets/thumb-home-02.jpg" alt="02 메인 페이지 첫 화면"></span>
+      <span class="no">02 · MAIN</span><span class="name">메인 페이지</span>
+      <span class="desc">브랜드 영상을 헤드라인 아래 16:9 박스로 보여주는 기본형.</span>
+    </a>
+    <a class="card" href="home-04.html">
+      <span class="thumb"><img src="assets/thumb-home-04.jpg" alt="04 메인 페이지 v2 첫 화면"></span>
+      <span class="no">04 · MAIN v2</span><span class="name">메인 v2 · 글로벌 장비사 스타일</span>
+      <span class="desc">영상을 화면 전체 배경으로 쓰는 안. 휴대폰에서는 세로형 영상으로 바뀝니다.</span>
+    </a>
+    <a class="card" href="home-05.html">
+      <span class="thumb"><img src="assets/thumb-home-05.jpg" alt="05 메인 페이지 v3 첫 화면"></span>
+      <span class="no">05 · MAIN v3</span><span class="name">메인 v3 · 첨단 공정</span>
+      <span class="desc">다크 톤에 제품 탐색과 공정 단계를 직접 눌러 보는 인터랙티브 안.</span>
+    </a>
+    <a class="card" href="cu-ion-milling.html">
+      <span class="thumb"><img src="assets/thumb-cu-ion-milling.jpg" alt="Cu Ion Milling 제품 상세 페이지"></span>
+      <span class="no">03 · PRODUCT</span><span class="name">제품 상세 템플릿 · Cu Ion Milling</span>
+      <span class="desc">모든 제품 페이지에 같은 구조로 적용할 상세 페이지 틀.</span>
+    </a>
+    <a class="card" href="sitemap.html">
+      <span class="thumb"><img src="assets/thumb-sitemap.jpg" alt="리뉴얼 사이트맵"></span>
+      <span class="no">01 · SITEMAP</span><span class="name">사이트맵</span>
+      <span class="desc">GNB 7개 메뉴와 하위 페이지 구성.</span>
+    </a>
+    <a class="card" href="hero-preview.html">
+      <span class="thumb"><img src="assets/thumb-hero-preview.jpg" alt="히어로 영상 적용 미리보기"></span>
+      <span class="no">VIDEO</span><span class="name">히어로 영상 적용 미리보기</span>
+      <span class="desc">세 메인 시안의 PC·모바일 화면을 나란히 비교.</span>
+    </a>
+  </section>
+
+  <footer class="note">
+    <p>디자인 검토용 시안으로 실제 운영 사이트가 아닙니다. [ ]로 표시된 문구와 수치는 ICD 자료를 받아 채울 자리이며, 일부 메뉴 링크는 아직 연결되어 있지 않습니다.</p>
+    <span>2026.11.02 · 이연주 | 루멘스 프레임<br>lumensframe@gmail.com</span>
+  </footer>
+</main>
+</body>
+</html>

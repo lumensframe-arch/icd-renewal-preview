@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>ICD 메인 페이지 · ICD 리뉴얼 시안</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}a:hover{color:#00C8FF}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-tpl"><div style="font-family: 'Roboto', 'Noto Sans KR', sans-serif; color: #0B1B33; background: #FFFFFF">
+
+<header style="background: #020812; border-bottom: 1px solid #1A2A44">
+<nav style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#" style="font-size: 26px; font-weight: 700; letter-spacing: 0.12em; color: #FFFFFF">ICD</a>
+<div style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 15px; color: #D5DEEA">
+<a href="#">기술</a>
+<a href="#">반도체</a>
+<a href="#">디스플레이</a>
+<a href="#">회사소개</a>
+<a href="#">뉴스룸</a>
+<a href="#">투자정보</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; font-size: 14px; color: #A9B8CB">
+<a href="#">인재채용</a>
+<a href="#">KR / EN</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #00AEEF; color: #020812; font-weight: 700">문의하기</a>
+</div>
+</nav>
+</header>
+
+<section style="background: #020812; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 120px 24px 96px; display: flex; flex-direction: column; gap: 32px">
+<div style="font-size: 14px; font-weight: 500; letter-spacing: 0.2em; color: #00C8FF">PLASMA ETCH TECHNOLOGY</div>
+<h1 style="margin: 0; font-size: 72px; line-height: 1.05; font-weight: 700; letter-spacing: -0.02em; max-width: 900px">Precision begins<br>with plasma.</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.6; color: #B8C7D9; max-width: 640px">20년 넘게 축적한 플라즈마 기술로, 반도체 Front-End부터 Advanced Package, 디스플레이 공정까지.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<a href="#products" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #FFFFFF; color: #020812; font-weight: 700; font-size: 16px">제품 보기</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 999px; border: 1px solid #5C7090; color: #FFFFFF; font-weight: 500; font-size: 16px">문의하기</a>
+</div>
+<div style="margin-top: 40px; border-radius: 16px; overflow: hidden; background: #0B1B33; aspect-ratio: 16 / 9">
+<video ref="{{videoRef}}" src="assets/7e50bb9008b6565a093b7bf3f922c929.mp4" poster="assets/801acf7fc3c80081b3d44e3cdbafe682.jpg" autoplay="" muted="" loop="" playsinline="" preload="auto" aria-label="ICD 브랜드 영상: 안성 본사, 식각 장비, 플라즈마 챔버" style="display: block; width: 100%; height: 100%; object-fit: cover"></video>
+</div>
+</div>
+</section>
+
+<section id="products" style="background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 120px 24px 48px; display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.16em; color: #0A5C8A">MARKETS</div>
+<h2 style="margin: 0; font-size: 48px; line-height: 1.15; letter-spacing: -0.02em">하나의 플라즈마 기술,<br>두 개의 시장.</h2>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 120px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+<div style="background: #062B5B; color: #FFFFFF; border-radius: 20px; padding: 48px; display: flex; flex-direction: column; gap: 20px; min-height: 360px">
+<div style="font-size: 14px; letter-spacing: 0.16em; color: #7FDBFF; font-weight: 700">SEMICONDUCTOR</div>
+<h3 style="margin: 0; font-size: 36px; line-height: 1.2">반도체</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #C9D6E6">고종횡비 식각, 원자층 식각부터 HBM·인터포저 패키징 공정까지.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px">
+<span style="padding: 6px 12px; border: 1px solid #3A5C8A; border-radius: 999px">Front-End</span>
+<span style="padding: 6px 12px; border: 1px solid #3A5C8A; border-radius: 999px">Advanced Package</span>
+</div>
+<a href="#" style="margin-top: auto; font-weight: 700; font-size: 16px; color: #FFFFFF">반도체 제품 보기 →</a>
+</div>
+<div style="background: #E8EEF5; color: #0B1B33; border-radius: 20px; padding: 48px; display: flex; flex-direction: column; gap: 20px; min-height: 360px">
+<div style="font-size: 14px; letter-spacing: 0.16em; color: #0A5C8A; font-weight: 700">DISPLAY</div>
+<h3 style="margin: 0; font-size: 36px; line-height: 1.2">디스플레이</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3B4D66">OLED · LCD 양산 라인의 건식각과 증착 전 플라즈마 처리.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px">
+<span style="padding: 6px 12px; border: 1px solid #A9BBD1; border-radius: 999px">AMOLED</span>
+<span style="padding: 6px 12px; border: 1px solid #A9BBD1; border-radius: 999px">LTPS · LTPO</span>
+<span style="padding: 6px 12px; border: 1px solid #A9BBD1; border-radius: 999px">TFT-LCD</span>
+</div>
+<a href="#" style="margin-top: auto; font-weight: 700; font-size: 16px; color: #062B5B">디스플레이 제품 보기 →</a>
+</div>
+</div>
+</section>
+
+<section style="background: #F4F7FA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 120px 24px 48px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.16em; color: #0A5C8A">FEATURED PRODUCTS</div>
+<h2 style="margin: 0; font-size: 48px; line-height: 1.15; letter-spacing: -0.02em">주요 제품</h2>
+</div>
+<a href="#" style="font-size: 16px; font-weight: 700; color: #062B5B">전체 제품 보기 →</a>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 120px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<a href="#" style="background: #FFFFFF; border: 1px solid #D6E0EB; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px; color: #0B1B33">
+<img src="assets/0c36986fc91d7a6c64055993d83b5ff0.jpg" alt="NexPion™ 플라즈마 식각 장비 — 멀티 챔버 클러스터 구성" style="display: block; width: 100%; height: 160px; border-radius: 10px; object-fit: cover; background: #C8C8C8">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; color: #0A5C8A">FRONT-END</span>
+<span style="font-size: 24px; font-weight: 700">NexPion™</span>
+<span style="font-size: 15px; line-height: 1.6; color: #3B4D66">R-wave Enhanced Plasma Etcher. 초고종횡비 Trench · Contact · Via Hole 식각.</span>
+<span style="font-size: 13px; color: #5B6E88">GAA · 3D DRAM · HBM</span>
+</a>
+<a href="#" style="background: #FFFFFF; border: 1px solid #D6E0EB; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px; color: #0B1B33">
+<img src="assets/0c36986fc91d7a6c64055993d83b5ff0.jpg" alt="ALE Series 원자층 식각 장비 — 멀티 챔버 클러스터 구성" style="display: block; width: 100%; height: 160px; border-radius: 10px; object-fit: cover; background: #C8C8C8">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; color: #0A5C8A">FRONT-END</span>
+<span style="font-size: 24px; font-weight: 700">ALE Series</span>
+<span style="font-size: 15px; line-height: 1.6; color: #3B4D66">High Throughput과 Atomic Scale Control을 동시에 구현하는 원자층 식각 플랫폼.</span>
+<span style="font-size: 13px; color: #5B6E88">차세대 Memory · Logic</span>
+</a>
+<a href="cu-ion-milling.html" style="background: #FFFFFF; border: 1px solid #D6E0EB; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px; color: #0B1B33">
+<img src="assets/093ab635d6ac467e5e685cb6c614b0c4.jpg" alt="Cu Ion Milling 장비 — 멀티 챔버 클러스터 구성" style="display: block; width: 100%; height: 160px; border-radius: 10px; object-fit: cover; background: #C8C8C8">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; color: #0A5C8A">ADVANCED PACKAGE</span>
+<span style="font-size: 24px; font-weight: 700">Cu Ion Milling</span>
+<span style="font-size: 15px; line-height: 1.6; color: #3B4D66">독자 플라즈마 소스 기반의 고밀도 플라즈마 Cu 식각.</span>
+<span style="font-size: 13px; color: #5B6E88">Cu Seed Layer · Silicon Interposer · OLEDoS</span>
+</a>
+<a href="#" style="background: #FFFFFF; border: 1px solid #D6E0EB; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px; color: #0B1B33">
+<img src="assets/5a4f668907946abde74e2ee1c990b9d3.jpg" alt="BDF Etch 장비 — 중앙 반송부와 다중 공정 모듈" style="display: block; width: 100%; height: 160px; border-radius: 10px; object-fit: cover; background: #C8C8C8">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; color: #0A5C8A">ADVANCED PACKAGE</span>
+<span style="font-size: 24px; font-weight: 700">BDF Etch</span>
+<span style="font-size: 15px; line-height: 1.6; color: #3B4D66">패키지 기판용 식각 솔루션. [BDF 정식 명칭 · 공정 설명]</span>
+<span style="font-size: 13px; color: #5B6E88">High Etch Rate · Uniformity · Throughput</span>
+</a>
+</div>
+</section>
+
+<section style="background: #020812; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 120px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.16em; color: #00C8FF">TECHNOLOGY</div>
+<h2 style="margin: 0; font-size: 48px; line-height: 1.15; letter-spacing: -0.02em">플라즈마를 원자 단위로 제어합니다.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #B8C7D9">공정 가스와 RF Power로 진공 챔버 안에 플라즈마를 만들고, 이온 에너지를 정밀하게 제어해 원하는 막만 깎아냅니다.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 16px; font-weight: 500">
+<span style="padding: 16px 22px; border: 1px solid #2E4568; border-radius: 12px">Process Gas</span>
+<span style="color: #00C8FF">→</span>
+<span style="padding: 16px 22px; border: 1px solid #2E4568; border-radius: 12px">RF Power</span>
+<span style="color: #00C8FF">→</span>
+<span style="padding: 16px 22px; border: 1px solid #2E4568; border-radius: 12px">High Density Plasma</span>
+<span style="color: #00C8FF">→</span>
+<span style="padding: 16px 22px; border: 1px solid #2E4568; border-radius: 12px">Controlled Ion Energy</span>
+<span style="color: #00C8FF">→</span>
+<span style="padding: 16px 22px; border-radius: 12px; background: #00AEEF; color: #020812; font-weight: 700">Precision Etch</span>
+</div>
+<a href="#" style="font-weight: 700; font-size: 16px">기술 자세히 보기 →</a>
+</div>
+</section>
+
+<section style="background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 120px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #062B5B; padding-top: 24px">
+<span style="font-size: 48px; font-weight: 700; letter-spacing: -0.02em">2000</span>
+<span style="font-size: 15px; color: #3B4D66">설립</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #062B5B; padding-top: 24px">
+<span style="font-size: 48px; font-weight: 700; letter-spacing: -0.02em">040910</span>
+<span style="font-size: 15px; color: #3B4D66">KOSDAQ 상장</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #062B5B; padding-top: 24px">
+<span style="font-size: 48px; font-weight: 700; letter-spacing: -0.02em">267</span>
+<span style="font-size: 15px; color: #3B4D66">임직원</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #062B5B; padding-top: 24px">
+<span style="font-size: 48px; font-weight: 700; letter-spacing: -0.02em">안성</span>
+<span style="font-size: 15px; color: #3B4D66">본사 · 천안 · 파주 CS센터</span>
+</div>
+</div>
+</section>
+
+<section style="background: #F4F7FA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 120px 24px 48px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.16em; color: #0A5C8A">NEWSROOM</div>
+<h2 style="margin: 0; font-size: 48px; line-height: 1.15; letter-spacing: -0.02em">최신 소식</h2>
+</div>
+<a href="#" style="font-size: 16px; font-weight: 700; color: #062B5B">뉴스룸 전체 보기 →</a>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 120px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+<a href="#" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; color: #0B1B33; border: 1px solid #D6E0EB">
+<img src="assets/325a3dbb782989fa069c7a48ab9688f7.jpg" alt="출하를 위해 보호 필름으로 포장된 ICD 식각 장비" style="display: block; width: 100%; height: 220px; object-fit: cover; object-position: 40% 55%; background: #E8EEF5">
+<span style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 13px; color: #5B6E88">보도자료 · [YYYY.MM.DD]</span>
+<span style="font-size: 20px; font-weight: 700; line-height: 1.4">[최신 보도자료 제목]</span>
+</span>
+</a>
+<a href="#" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; color: #0B1B33; border: 1px solid #D6E0EB">
+<img src="assets/293945efccc1a151fc80ecdcf0ecb340.jpg" alt="반도체 전시회에 전시된 ICD 장비 부스" style="display: block; width: 100%; height: 220px; object-fit: cover; object-position: 50% 55%; background: #E8EEF5">
+<span style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 13px; color: #5B6E88">전시 · [YYYY.MM.DD]</span>
+<span style="font-size: 20px; font-weight: 700; line-height: 1.4">[전시회 참가 소식]</span>
+</span>
+</a>
+<a href="#" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; color: #0B1B33; border: 1px solid #D6E0EB">
+<span style="position: relative; display: block">
+<img src="assets/1ba22585a0fe79cd45a72a1cec6167a1.jpg" alt="공정 챔버에 웨이퍼를 넣는 엔지니어" style="display: block; width: 100%; height: 220px; object-fit: cover; object-position: 55% 50%; background: #E8EEF5">
+<span style="position: absolute; left: 20px; bottom: 20px; width: 48px; height: 48px; border-radius: 999px; background: rgba(2,8,18,0.72); display: flex; align-items: center; justify-content: center">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"></path></svg>
+</span>
+</span>
+<span style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 13px; color: #5B6E88">영상 · [YYYY.MM.DD]</span>
+<span style="font-size: 20px; font-weight: 700; line-height: 1.4">ICD Etch Technology 브랜드 영상 공개</span>
+</span>
+</a>
+</div>
+</section>
+
+<section style="background: #062B5B; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 40px; line-height: 1.2; letter-spacing: -0.02em">공정 과제를 알려주세요.</h2>
+<p style="margin: 0; font-size: 18px; color: #C9D6E6">ICD 엔지니어가 맞는 솔루션을 제안해 드립니다.</p>
+</div>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 32px; border-radius: 999px; background: #FFFFFF; color: #062B5B; font-weight: 700; font-size: 17px">문의하기</a>
+</div>
+</section>
+
+<footer style="background: #020812; color: #A9B8CB">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; font-size: 14px; line-height: 1.9">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 22px; font-weight: 700; letter-spacing: 0.12em; color: #FFFFFF">ICD</span>
+<span>(주)아이씨디</span>
+<span>경기도 안성시 대덕면 만세로 274</span>
+</div>
+<div style="display: flex; flex-direction: column">
+<span style="color: #FFFFFF; font-weight: 700">제품</span>
+<a href="#">반도체</a>
+<a href="#">디스플레이</a>
+<a href="#">기술</a>
+</div>
+<div style="display: flex; flex-direction: column">
+<span style="color: #FFFFFF; font-weight: 700">회사</span>
+<a href="#">회사소개</a>
+<a href="#">뉴스룸</a>
+<a href="#">투자정보</a>
+<a href="#">인재채용</a>
+</div>
+<div style="display: flex; flex-direction: column">
+<span style="color: #FFFFFF; font-weight: 700">패밀리 사이트</span>
+<a href="#">[의료헬스 · 자회사 사이트]</a>
+<a href="#">[ICD 머트리얼즈]</a>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 24px; border-top: 1px solid #1A2A44; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px">
+<span>© ICD Co., Ltd. All rights reserved.</span>
+<span>개인정보처리방침 · 이용약관</span>
+</div>
+</footer>
+</div></template>
+<a class="icd-draft" href="index.html" aria-label="시안 목록으로">디자인 시안 · 실제 사이트 아님 <span>시안 목록</span></a>
+<style>
+.icd-draft{position:fixed;left:max(12px,env(safe-area-inset-left,0px));bottom:max(12px,env(safe-area-inset-bottom,0px));z-index:9999;display:inline-flex;align-items:center;gap:10px;min-height:40px;padding:0 6px 0 14px;border-radius:999px;background:rgba(2,8,18,.86);color:#E6EDF6 !important;font:500 12px/1 'Roboto','Noto Sans KR',sans-serif;letter-spacing:.02em;text-decoration:none;box-shadow:0 4px 18px rgba(0,0,0,.25);backdrop-filter:blur(6px)}
+.icd-draft span{display:inline-flex;align-items:center;min-height:30px;padding:0 12px;border-radius:999px;background:#00AEEF;color:#020812;font-weight:700}
+.icd-draft:focus-visible{outline:2px solid #00AEEF;outline-offset:3px}
+</style>
+<script src="js/morphdom-umd.min.js"></script>
+<script src="js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+renderVals() {
+if (!this.videoRef) {
+this.videoRef = function (el) { if (el) { el.muted = true; el.loop = true; el.playsInline = true; var pr = el.play(); if (pr && pr.catch) { pr.catch(function () {}); } } };
+}
+return { videoRef: this.videoRef };
+}
+}
+DCLite.mount(Component, document.getElementById('dc-root'), document.getElementById('dc-tpl'));
+</script>
+</body>
+</html>

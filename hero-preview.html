@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>body{margin:0}</style>
+<title>ICD 히어로 영상 시안</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&family=Noto+Sans+KR:wght@300;400;500;700&display=swap">
+<style>
+/* Layout: a dark viewing room — desktop browser and phone side by side, tabs switch between the three homepage drafts. Single dark look by choice so the video reads as on a screen. */
+:root{
+  --bg:#0A0E15; --panel:#111722; --line:#232C3B; --fg:#E9EEF5; --muted:#9AA6B7; --accent:#00AEEF; --accent-ink:#04121C;
+  --sans:'Roboto','Noto Sans KR',system-ui,sans-serif; --mono:'Roboto Mono',ui-monospace,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.6}
+.wrap{max-width:1280px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:28px}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;border-bottom:1px solid var(--line);padding-bottom:24px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--accent)}
+h1{margin:6px 0 0;font-size:clamp(26px,3.4vw,38px);line-height:1.2;font-weight:700;letter-spacing:-.01em;text-wrap:balance}
+.lead{margin:8px 0 0;color:var(--muted);max-width:62ch}
+.meta{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:right;line-height:1.8}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{appearance:none;border:1px solid var(--line);background:transparent;color:var(--fg);font:inherit;font-size:15px;min-height:44px;padding:0 18px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:10px}
+.tab b{font-family:var(--mono);font-weight:500;color:var(--muted)}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.tab[aria-selected="true"] b{color:var(--accent-ink)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.stage{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.dev{display:flex;flex-direction:column;gap:10px;min-width:0}
+.dev.desk{flex:1 1 560px}
+.dev.phone{flex:0 0 auto;width:min(310px,100%);margin-inline:auto}
+.cap{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.browser{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+.bar{height:36px;display:flex;align-items:center;gap:12px;padding:0 14px;border-bottom:1px solid var(--line)}
+.url{flex:1;max-width:340px;margin:0 auto;height:22px;border-radius:6px;background:var(--bg);font-family:var(--mono);font-size:11px;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.handset{border:10px solid #1C2330;border-radius:40px;overflow:hidden;background:#000;box-shadow:0 0 0 1px var(--line)}
+.vp{position:relative;width:100%;overflow-y:auto;overflow-x:hidden;background:#fff;scrollbar-width:thin}
+.sizer{position:relative;width:100%}
+.screen{position:absolute;top:0;left:0;transform-origin:0 0;container-type:inline-size}
+.rest{padding:56px 24px;text-align:center;font-family:'Roboto','Noto Sans KR',sans-serif;font-size:15px;letter-spacing:.04em}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.note{background:var(--panel);padding:20px 22px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.note dt{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--accent)}
+.note dd{margin:0;color:var(--fg)}
+.note small{color:var(--muted);font-size:13px}
+h2{margin:12px 0 0;font-size:20px;font-weight:700}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{width:100%;min-width:640px;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:500;color:var(--muted);font-size:12px;letter-spacing:.06em}
+tr:last-child td{border-bottom:0}
+td.f{font-family:var(--mono);font-size:13px;word-break:break-all}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+.foot{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="eyebrow">ICD WEBSITE RENEWAL · HERO VIDEO</div>
+      <h1>메인 페이지 히어로 영상 적용 시안</h1>
+      <p class="lead">최종 홈페이지 영상(자막 없는 버전)을 메인 페이지 시안 세 가지에 넣은 화면입니다. 데스크톱과 모바일에서 실제로 보이는 모습을 비율 그대로 줄여 보여드립니다.</p>
+    </div>
+    <div class="meta">2026.11.02<br>루멘스 프레임</div>
+  </header>
+
+  <div class="tabs" role="tablist" aria-label="메인 페이지 시안">
+    <button class="tab" role="tab" id="t-v02" data-v="v02" aria-controls="panel" aria-selected="true"><b>02</b>메인 페이지</button>
+    <button class="tab" role="tab" id="t-v04" data-v="v04" aria-controls="panel" aria-selected="false"><b>04</b>메인 v2 · 글로벌 장비사 스타일</button>
+    <button class="tab" role="tab" id="t-v05" data-v="v05" aria-controls="panel" aria-selected="false"><b>05</b>메인 v3 · 첨단 공정</button>
+  </div>
+
+  <section id="panel" role="tabpanel" aria-labelledby="t-v02" style="display:flex;flex-direction:column;gap:24px">
+    <div class="stage">
+      <div class="dev desk">
+        <div class="browser">
+          <div class="bar"><span class="url">www.icd.co.kr</span></div>
+          <div class="vp" id="vp-desk" data-w="1440" data-h="900"><div class="sizer"><div class="screen" id="sc-desk"></div></div></div>
+        </div>
+        <div class="cap"><span>데스크톱 · 1440 × 900 화면</span><span>프레임 안에서 스크롤</span></div>
+      </div>
+      <div class="dev phone">
+        <div class="handset">
+          <div class="vp" id="vp-phone" data-w="390" data-h="844"><div class="sizer"><div class="screen" id="sc-phone"></div></div></div>
+        </div>
+        <div class="cap"><span>모바일 · 390 × 844 화면</span></div>
+      </div>
+    </div>
+    <dl class="notes" id="notes"></dl>
+  </section>
+
+  <h2>웹용 영상 파일</h2>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>파일</th><th>해상도</th><th>길이</th><th>용량</th><th>쓰는 곳</th></tr></thead>
+      <tbody>
+        <tr><td class="f">ICD_Hero_16x9_loop_1080p.mp4</td><td class="n">1920 × 1080 (16:9)</td><td class="n">50.0초</td><td class="n">10.6 MB</td><td>02 · 05 메인 (로고 엔딩까지 반복)</td></tr>
+        <tr><td class="f">ICD_Hero_16x9_bg_1080p.mp4</td><td class="n">1920 × 1080 (16:9)</td><td class="n">46.5초</td><td class="n">10.2 MB</td><td>04 메인 v2 데스크톱 배경 (로고 전까지 반복)</td></tr>
+        <tr><td class="f">ICD_Hero_4x5_bg_mobile.mp4</td><td class="n">864 × 1080 (4:5)</td><td class="n">26.3초</td><td class="n">3.2 MB</td><td>04 메인 v2 모바일 배경 (화면 폭 640px 이하)</td></tr>
+        <tr><td class="f">ICD_Hero_16x9_poster.jpg · ICD_Hero_4x5_poster.jpg</td><td class="n">1920 × 1080 · 864 × 1080</td><td class="n">–</td><td class="n">0.1 MB</td><td>영상이 뜨기 전 첫 화면</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="lead" style="margin:0">모든 영상은 소리 없이 자동 재생·반복되며, 웹 로딩을 위해 4K 원본을 1080p H.264로 변환했습니다.</p>
+
+  <footer class="foot"><span>㈜아이씨디 홈페이지 리뉴얼 · 히어로 영상 적용 시안</span><span>이연주 | 루멘스 프레임 · lumensframe@gmail.com · <a href="index.html" style="color:var(--accent)">시안 목록</a></span></footer>
+</div>
+
+<script>
+(function(){
+  var M = {
+    loop:'assets/7e50bb9008b6565a093b7bf3f922c929.mp4', bg:'assets/37c11eb8ad5e660e8e21f0e8a277b06e.mp4', mob:'assets/7a5b3cb10df643bae9b040ad19b237f9.mp4',
+    p169:'assets/801acf7fc3c80081b3d44e3cdbafe682.jpg', p45:'assets/6046e3663a2bd3a27914d721ca8a473b.jpg'
+  };
+  function vid(src, poster, style, label){
+    return '<video src="'+src+'" poster="'+poster+'" autoplay muted loop playsinline preload="auto" '+(label?'aria-label="'+label+'"':'aria-hidden="true"')+' style="'+style+'"></video>';
+  }
+  var F = "font-family:'Roboto','Noto Sans KR',sans-serif;";
+
+  function v02(mobile){
+    return '<div style="'+F+'color:#0B1B33;background:#FFFFFF">'+
+    '<header style="background:#020812;border-bottom:1px solid #1A2A44"><nav style="max-width:1200px;margin:0 auto;padding:16px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">'+
+    '<span style="font-size:26px;font-weight:700;letter-spacing:.12em;color:#FFFFFF">ICD</span>'+
+    '<div style="display:flex;flex-wrap:wrap;gap:28px;font-size:15px;color:#D5DEEA"><span>기술</span><span>반도체</span><span>디스플레이</span><span>회사소개</span><span>뉴스룸</span><span>투자정보</span></div>'+
+    '<div style="display:flex;flex-wrap:wrap;align-items:center;gap:20px;font-size:14px;color:#A9B8CB"><span>인재채용</span><span>KR / EN</span><span style="display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;background:#00AEEF;color:#020812;font-weight:700">문의하기</span></div>'+
+    '</nav></header>'+
+    '<section style="background:#020812;color:#FFFFFF"><div style="max-width:1200px;margin:0 auto;padding:'+(mobile?'72px 24px 64px':'120px 24px 96px')+';display:flex;flex-direction:column;gap:32px">'+
+    '<div style="font-size:14px;font-weight:500;letter-spacing:.2em;color:#00C8FF">PLASMA ETCH TECHNOLOGY</div>'+
+    '<div style="margin:0;font-size:'+(mobile?'44px':'72px')+';line-height:1.05;font-weight:700;letter-spacing:-.02em;max-width:900px">Precision begins<br>with plasma.</div>'+
+    '<p style="margin:0;font-size:'+(mobile?'17px':'20px')+';line-height:1.6;color:#B8C7D9;max-width:640px">20년 넘게 축적한 플라즈마 기술로, 반도체 Front-End부터 Advanced Package, 디스플레이 공정까지.</p>'+
+    '<div style="display:flex;flex-wrap:wrap;gap:16px"><span style="display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border-radius:999px;background:#FFFFFF;color:#020812;font-weight:700;font-size:16px">제품 보기</span><span style="display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border-radius:999px;border:1px solid #5C7090;color:#FFFFFF;font-weight:500;font-size:16px">문의하기</span></div>'+
+    '<div style="margin-top:'+(mobile?'16px':'40px')+';border-radius:16px;overflow:hidden;background:#0B1B33;aspect-ratio:16/9">'+vid(M.loop,M.p169,'display:block;width:100%;height:100%;object-fit:cover','ICD 브랜드 영상')+'</div>'+
+    '</div></section>'+
+    '<div class="rest" style="background:#FFFFFF;color:#5B6E88">MARKETS · FEATURED PRODUCTS · NEWSROOM …<br><small>(이하 섹션 생략)</small></div></div>';
+  }
+
+  function v04(mobile){
+    return '<div style="'+F+'color:#101820;background:#FFFFFF">'+
+    '<div style="background:#F2F4F7;border-bottom:1px solid #E1E5EB"><div style="max-width:1280px;margin:0 auto;padding:0 '+(mobile?'20px':'32px')+';display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:'+(mobile?'18px':'28px')+';min-height:40px;font-size:13px;color:#4A5563"><span>투자정보</span><span>뉴스룸</span><span>인재채용</span><span>KR | EN</span></div></div>'+
+    '<header style="background:#FFFFFF;border-bottom:1px solid #E1E5EB"><nav style="max-width:1280px;margin:0 auto;padding:'+(mobile?'12px 20px':'0 32px')+';min-height:80px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:'+(mobile?'12px 24px':'24px')+'">'+
+    '<span style="display:flex;align-items:center;gap:12px"><span style="font-size:30px;font-weight:700;letter-spacing:.08em;color:#062B5B">ICD</span><span style="width:1px;height:24px;background:#C8D0DA"></span><span style="font-size:12px;letter-spacing:.12em;color:#4A5563">PLASMA ETCH SOLUTIONS</span></span>'+
+    '<div style="display:flex;flex-wrap:wrap;align-items:center;gap:'+(mobile?'24px':'36px')+';font-size:16px;font-weight:500"><span>제품</span><span>기술</span><span>적용 시장</span><span>회사소개</span></div>'+
+    '<span style="display:inline-flex;align-items:center;min-height:44px;padding:0 24px;background:#0057B8;color:#FFFFFF;font-size:15px;font-weight:500">문의하기</span>'+
+    '</nav></header>'+
+    '<section style="position:relative;background:#050D1A;color:#FFFFFF;min-height:680px;display:flex;align-items:flex-end;overflow:hidden">'+
+    (mobile ? vid(M.mob,M.p45,'position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover') : vid(M.bg,M.p169,'position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover'))+
+    '<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,13,26,.88) 0%,rgba(5,13,26,.6) 50%,rgba(5,13,26,.2) 100%)"></div>'+
+    '<div style="position:absolute;left:0;right:0;bottom:0;height:240px;background:linear-gradient(0deg,rgba(5,13,26,.85) 0%,rgba(5,13,26,0) 100%)"></div>'+
+    '<div style="position:relative;width:100%;max-width:1280px;margin:0 auto;padding:0 '+(mobile?'20px 56px':'32px 96px')+';display:flex;flex-direction:column;gap:28px">'+
+    '<div style="font-size:14px;letter-spacing:.18em;color:#6CC4FF;font-weight:500">SEMICONDUCTOR · DISPLAY</div>'+
+    '<div style="margin:0;font-size:clamp(42px,6cqw,88px);line-height:1.04;font-weight:300;letter-spacing:-.02em;max-width:960px">Etching the future,<br><span style="font-weight:700">atom by atom.</span></div>'+
+    '<p style="margin:0;font-size:'+(mobile?'17px':'20px')+';line-height:1.6;color:#C3CEDC;max-width:600px">플라즈마 식각 기술로 반도체 Front-End부터 Advanced Package, 디스플레이 양산 라인까지.</p>'+
+    '<div style="display:flex;flex-wrap:wrap;align-items:center;gap:'+(mobile?'20px':'32px')+'"><span style="display:inline-flex;align-items:center;gap:14px;min-height:52px;padding:0 28px;background:#FFFFFF;color:#050D1A;font-weight:500;font-size:16px">솔루션 살펴보기 →</span><span style="display:inline-flex;align-items:center;min-height:44px;font-size:16px;color:#FFFFFF;border-bottom:1px solid #FFFFFF">브랜드 영상 보기</span></div>'+
+    '</div></section>'+
+    '<div class="rest" style="background:#FFFFFF;color:#4A5563">ICD 이야기 · 적용 시장 · 제품 …<br><small>(이하 섹션 생략)</small></div></div>';
+  }
+
+  function v05(mobile){
+    return '<div style="'+F+'color:#E8EDF5;background:#07090F">'+
+    '<header style="border-bottom:1px solid #1F2836;background:#07090F"><nav style="max-width:1320px;margin:0 auto;padding:'+(mobile?'14px 20px':'0 32px')+';min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:'+(mobile?'12px 20px':'20px')+'">'+
+    '<span style="display:flex;align-items:center;gap:14px"><span style="font-size:26px;font-weight:700;letter-spacing:.1em;color:#FFFFFF">ICD</span><span style="font-family:\'Roboto Mono\',monospace;font-size:11px;color:#8D99AB;letter-spacing:.08em">KOSDAQ 040910</span></span>'+
+    '<div style="display:flex;flex-wrap:wrap;align-items:center;gap:'+(mobile?'18px':'32px')+';font-size:15px;color:#C9D2DF"><span>제품</span><span>기술</span><span>회사소개</span><span>뉴스룸</span><span>투자정보</span><span>인재채용</span></div>'+
+    '<div style="display:flex;align-items:center;gap:18px"><span style="font-family:\'Roboto Mono\',monospace;font-size:12px;color:#8D99AB">KR / EN</span><span style="display:inline-flex;align-items:center;min-height:44px;padding:0 22px;border:1px solid #A58BFF;color:#FFFFFF;font-size:14px;font-weight:500">엔지니어 상담</span></div>'+
+    '</nav></header>'+
+    '<section style="border-bottom:1px solid #1F2836"><div style="max-width:1320px;margin:0 auto;padding:'+(mobile?'56px 20px 48px':'96px 32px 72px')+';display:grid;grid-template-columns:repeat(auto-fit,minmax('+(mobile?'300px':'360px')+',1fr));gap:'+(mobile?'40px':'56px')+';align-items:center">'+
+    '<div style="display:flex;flex-direction:column;gap:28px">'+
+    '<div style="font-family:\'Roboto Mono\',monospace;font-size:12px;letter-spacing:.14em;color:#A58BFF">// PLASMA ETCH · SINCE 2000</div>'+
+    '<div style="margin:0;font-size:clamp(44px,5.6cqw,84px);line-height:1.02;font-weight:300;letter-spacing:-.03em;color:#FFFFFF">Defining<br>the edge<br><span style="font-weight:700">of etch.</span></div>'+
+    '<p style="margin:0;font-size:'+(mobile?'17px':'19px')+';line-height:1.7;color:#A9B4C4;max-width:520px">나노미터 아래의 세계에서 ICD는 플라즈마로 길을 냅니다. 트랜지스터부터 패키지, 디스플레이까지 한 가지 기술로.</p>'+
+    '<div style="display:flex;flex-wrap:wrap;gap:14px"><span style="display:inline-flex;align-items:center;min-height:52px;padding:0 28px;background:#A58BFF;color:#07090F;font-weight:700;font-size:15px">솔루션 탐색 →</span><span style="display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border:1px solid #3A4659;color:#FFFFFF;font-size:15px">▶ 브랜드 영상 보기</span></div>'+
+    '</div>'+
+    '<div style="display:flex;flex-direction:column;gap:12px"><div style="position:relative;border:1px solid #3A4659;background:#0E131D;overflow:hidden;aspect-ratio:16/9">'+vid(M.loop,M.p169,'display:block;width:100%;height:100%;object-fit:cover','ICD 브랜드 영상')+
+    '<span style="position:absolute;top:0;left:0;width:14px;height:14px;border-top:2px solid #A58BFF;border-left:2px solid #A58BFF"></span><span style="position:absolute;bottom:0;right:0;width:14px;height:14px;border-bottom:2px solid #A58BFF;border-right:2px solid #A58BFF"></span></div>'+
+    '<div style="display:flex;justify-content:space-between;gap:12px;font-family:\'Roboto Mono\',monospace;font-size:11px;color:#8D99AB;letter-spacing:.06em"><span>LIVE · ICD FAB · ANSEONG</span><span>PLASMA ETCH SYSTEMS</span></div></div>'+
+    '</div></section>'+
+    '<div class="rest" style="background:#07090F;color:#8D99AB">FRONT-END ETCH · ADVANCED PACKAGE · DISPLAY …<br><small>(이하 섹션 생략)</small></div></div>';
+  }
+
+  var NOTES = {
+    v02:[['영상 영역','16:9 박스','본문 아래에 둥근 모서리 박스로 들어가며 영상이 잘리지 않습니다.'],
+         ['재생','50초 전체 반복','마지막 ICD 로고가 D 안으로 줌인되어 첫 장면으로 이어집니다.'],
+         ['모바일','같은 영상','박스가 화면 폭에 맞게 줄어들어 16:9 그대로 보입니다.']],
+    v04:[['영상 영역','화면 전체 배경','영상 위에 어두운 그라데이션과 헤드라인이 얹힙니다. 화면 비율에 맞춰 영상이 채워지므로 일부가 잘립니다.'],
+         ['데스크톱','16:9 · 46.5초 반복','흰 로고 화면이 헤드라인을 가리지 않도록 로고 직전에서 반복합니다. 1440 × 680 기준 위아래 약 15%가 잘립니다.'],
+         ['모바일','4:5 30초 컷 · 26.3초 반복','화면 폭 640px 이하에서 세로형 영상으로 자동 전환되어 좌우 잘림을 줄입니다.']],
+    v05:[['영상 영역','16:9 박스','헤드라인 오른쪽 프레임 안에 들어가며 영상이 잘리지 않습니다.'],
+         ['재생','50초 전체 반복','로고 엔딩에서 첫 장면으로 자연스럽게 이어집니다.'],
+         ['모바일','같은 영상','헤드라인 아래로 박스가 내려와 16:9 그대로 보입니다.']]
+  };
+  var BUILD = {v02:v02, v04:v04, v05:v05};
+
+  var desk = document.getElementById('vp-desk'), phone = document.getElementById('vp-phone');
+  function fit(vp){
+    var sc = vp.querySelector('.screen'), sz = vp.querySelector('.sizer');
+    var nw = +vp.dataset.w, nh = +vp.dataset.h, w = vp.clientWidth || 1, s = w / nw;
+    sc.style.width = nw + 'px';
+    sc.style.transform = 'scale(' + s + ')';
+    sz.style.height = (sc.offsetHeight * s) + 'px';
+    vp.style.height = Math.round(nh * s) + 'px';
+  }
+  function fitAll(){ fit(desk); fit(phone); }
+  if (window.ResizeObserver){
+    var ro = new ResizeObserver(fitAll);
+    ro.observe(desk); ro.observe(phone);
+    ro.observe(document.getElementById('sc-desk')); ro.observe(document.getElementById('sc-phone'));
+  } else { window.addEventListener('resize', fitAll); }
+
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+  function show(v){
+    if (!BUILD[v]) v = 'v02';
+    document.querySelectorAll('video').forEach(function(x){ try{ x.pause(); }catch(e){} });
+    document.getElementById('sc-desk').innerHTML = BUILD[v](false);
+    document.getElementById('sc-phone').innerHTML = BUILD[v](true);
+    desk.scrollTop = 0; phone.scrollTop = 0;
+    document.querySelectorAll('.tab').forEach(function(t){ t.setAttribute('aria-selected', t.dataset.v === v ? 'true' : 'false'); });
+    document.getElementById('panel').setAttribute('aria-labelledby', 't-' + v);
+    document.getElementById('notes').innerHTML = NOTES[v].map(function(n){
+      return '<div class="note"><dt>'+esc(n[0])+'</dt><dd>'+esc(n[1])+'</dd><small>'+esc(n[2])+'</small></div>';
+    }).join('');
+    document.querySelectorAll('#panel video').forEach(function(x){ x.muted = true; var p = x.play(); if (p && p.catch) p.catch(function(){}); });
+    fitAll();
+  }
+  document.querySelectorAll('.tab').forEach(function(t){
+    t.addEventListener('click', function(){
+      if (location.hash !== '#' + t.dataset.v) location.hash = t.dataset.v; else show(t.dataset.v);
+    });
+  });
+  window.addEventListener('hashchange', function(){ show(location.hash.slice(1)); });
+  show(location.hash.slice(1) || 'v02');
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
+})();
+</script>
+
+</body>
+</html>

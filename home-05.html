@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>ICD 메인 v3 · ICD 리뉴얼 시안</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Roboto+Mono:wght@400;500&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap">
+<style>
+body{margin:0;background:#07090F}
+a{color:inherit;text-decoration:none}a:hover{color:#B9A4FF}
+button{font-family:inherit}
+@keyframes icdscan{0%{transform:translateY(-190px)}100%{transform:translateY(190px)}}
+.icd-scan{animation:icdscan 4.5s linear infinite alternate}
+@media (prefers-reduced-motion: reduce){.icd-scan{animation:none}}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-tpl"><div style="font-family: 'Roboto', 'Noto Sans KR', sans-serif; color: #E8EDF5; background: #07090F">
+
+<header style="border-bottom: 1px solid #1F2836; background: #07090F">
+<nav style="max-width: 1320px; margin: 0 auto; padding: 0 32px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<a href="#" style="display: flex; align-items: center; gap: 14px">
+<span style="font-size: 26px; font-weight: 700; letter-spacing: 0.1em; color: #FFFFFF">ICD</span>
+<span style="font-family: 'Roboto Mono', monospace; font-size: 11px; color: #8D99AB; letter-spacing: 0.08em">KOSDAQ 040910</span>
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 32px; font-size: 15px; color: #C9D2DF">
+<a href="#explorer">제품</a>
+<a href="#technology">기술</a>
+<a href="#">회사소개</a>
+<a href="#">뉴스룸</a>
+<a href="#">투자정보</a>
+<a href="#">인재채용</a>
+</div>
+<div style="display: flex; align-items: center; gap: 18px">
+<a href="#" style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #8D99AB">KR / EN</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #A58BFF; color: #FFFFFF; font-size: 14px; font-weight: 500">엔지니어 상담</a>
+</div>
+</nav>
+</header>
+
+<section style="border-bottom: 1px solid #1F2836">
+<div style="max-width: 1320px; margin: 0 auto; padding: 96px 32px 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 56px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div style="font-family: 'Roboto Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #A58BFF">// PLASMA ETCH · SINCE 2000</div>
+<h1 style="margin: 0; font-size: clamp(44px, 5.6vw, 84px); line-height: 1.02; font-weight: 300; letter-spacing: -0.03em; color: #FFFFFF">Defining<br>the edge<br><span style="font-weight: 700">of etch.</span></h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.7; color: #A9B4C4; max-width: 520px">나노미터 아래의 세계에서 ICD는 플라즈마로 길을 냅니다. 트랜지스터부터 패키지, 디스플레이까지 한 가지 기술로.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#explorer" style="display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 28px; background: #A58BFF; color: #07090F; font-weight: 700; font-size: 15px">솔루션 탐색 →</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 28px; border: 1px solid #3A4659; color: #FFFFFF; font-size: 15px">▶ 브랜드 영상 보기</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="position: relative; border: 1px solid #3A4659; background: #0E131D; overflow: hidden; aspect-ratio: 16 / 9">
+<video ref="{{videoRef}}" src="assets/7e50bb9008b6565a093b7bf3f922c929.mp4" poster="assets/801acf7fc3c80081b3d44e3cdbafe682.jpg" autoplay="" muted="" loop="" playsinline="" preload="auto" aria-label="ICD 브랜드 영상: 안성 본사, 식각 장비, 플라즈마 챔버" style="display: block; width: 100%; height: 100%; object-fit: cover"></video>
+<span style="position: absolute; top: 0; left: 0; width: 14px; height: 14px; border-top: 2px solid #A58BFF; border-left: 2px solid #A58BFF"></span>
+<span style="position: absolute; bottom: 0; right: 0; width: 14px; height: 14px; border-bottom: 2px solid #A58BFF; border-right: 2px solid #A58BFF"></span>
+</div>
+<div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'Roboto Mono', monospace; font-size: 11px; color: #8D99AB; letter-spacing: 0.06em">
+<span>LIVE · ICD FAB · ANSEONG</span>
+<span>PLASMA ETCH SYSTEMS</span>
+</div>
+</div>
+</div>
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border-top: 1px solid #1F2836">
+<div style="padding: 22px 0; display: flex; flex-direction: column; gap: 6px; border-right: 1px solid #1F2836"><span style="font-family: 'Roboto Mono', monospace; font-size: 11px; color: #8D99AB">01</span><span style="font-size: 15px">Front-End Etch</span></div>
+<div style="padding: 22px 0 22px 24px; display: flex; flex-direction: column; gap: 6px; border-right: 1px solid #1F2836"><span style="font-family: 'Roboto Mono', monospace; font-size: 11px; color: #8D99AB">02</span><span style="font-size: 15px">Advanced Package</span></div>
+<div style="padding: 22px 0 22px 24px; display: flex; flex-direction: column; gap: 6px; border-right: 1px solid #1F2836"><span style="font-family: 'Roboto Mono', monospace; font-size: 11px; color: #8D99AB">03</span><span style="font-size: 15px">Display Plasma</span></div>
+<div style="padding: 22px 0 22px 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Roboto Mono', monospace; font-size: 11px; color: #8D99AB">04</span><span style="font-size: 15px">Global CS Network</span></div>
+</div>
+</section>
+
+<section style="border-bottom: 1px solid #1F2836">
+<div style="max-width: 1320px; margin: 0 auto; padding: 120px 32px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<h2 style="margin: 0; font-size: clamp(32px, 3.6vw, 52px); line-height: 1.15; font-weight: 300; letter-spacing: -0.02em; color: #FFFFFF">트랜지스터에서 패키지까지,<br><span style="font-weight: 700">ICD가 깎는 자리.</span></h2>
+<span style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #8D99AB">APPLICATION MAP</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); border-top: 1px solid #3A4659">
+<div style="padding: 24px 20px 24px 0; display: flex; flex-direction: column; gap: 10px; border-right: 1px solid #1F2836"><span style="width: 10px; height: 10px; background: #A58BFF"></span><span style="font-size: 20px; font-weight: 700">GAA</span><span style="font-size: 14px; color: #A9B4C4; line-height: 1.6">차세대 로직 트랜지스터</span></div>
+<div style="padding: 24px 20px; display: flex; flex-direction: column; gap: 10px; border-right: 1px solid #1F2836"><span style="width: 10px; height: 10px; background: #A58BFF"></span><span style="font-size: 20px; font-weight: 700">3D DRAM</span><span style="font-size: 14px; color: #A9B4C4; line-height: 1.6">초고종횡비 셀 구조</span></div>
+<div style="padding: 24px 20px; display: flex; flex-direction: column; gap: 10px; border-right: 1px solid #1F2836"><span style="width: 10px; height: 10px; background: #7A63D0"></span><span style="font-size: 20px; font-weight: 700">HBM</span><span style="font-size: 14px; color: #A9B4C4; line-height: 1.6">AI 메모리 적층</span></div>
+<div style="padding: 24px 20px; display: flex; flex-direction: column; gap: 10px; border-right: 1px solid #1F2836"><span style="width: 10px; height: 10px; background: #7A63D0"></span><span style="font-size: 20px; font-weight: 700">Interposer</span><span style="font-size: 14px; color: #A9B4C4; line-height: 1.6">Si 인터포저 · Cu Seed</span></div>
+<div style="padding: 24px 20px; display: flex; flex-direction: column; gap: 10px; border-right: 1px solid #1F2836"><span style="width: 10px; height: 10px; background: #4E4290"></span><span style="font-size: 20px; font-weight: 700">OLEDoS</span><span style="font-size: 14px; color: #A9B4C4; line-height: 1.6">XR용 마이크로 디스플레이</span></div>
+<div style="padding: 24px 0 24px 20px; display: flex; flex-direction: column; gap: 10px"><span style="width: 10px; height: 10px; background: #4E4290"></span><span style="font-size: 20px; font-weight: 700">AMOLED</span><span style="font-size: 14px; color: #A9B4C4; line-height: 1.6">모바일 · IT 패널 양산</span></div>
+</div>
+</div>
+</section>
+
+<section id="explorer" style="border-bottom: 1px solid #1F2836; background: #0A0E16">
+<div style="max-width: 1320px; margin: 0 auto; padding: 120px 32px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Roboto Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #A58BFF">// PRODUCT EXPLORER</span>
+<h2 style="margin: 0; font-size: clamp(32px, 3.6vw, 52px); line-height: 1.15; font-weight: 300; letter-spacing: -0.02em; color: #FFFFFF">공정을 고르면<br><span style="font-weight: 700">장비가 보입니다.</span></h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 0; border: 1px solid #3A4659">
+<sc-for list="{{tabs}}" as="tab" hint-placeholder-count="3">
+<button style="{{tab.style}}" onClick="{{tab.pick}}">{{tab.label}}</button>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; border-top: 1px solid #3A4659">
+<sc-for list="{{products}}" as="p" hint-placeholder-count="2">
+<button style="{{p.style}}" onClick="{{p.pick}}">
+<span style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #8D99AB">{{p.code}}</span>
+<span style="font-size: 22px; font-weight: 700">{{p.name}}</span>
+<span style="font-size: 14px; color: #A9B4C4">{{p.short}}</span>
+</button>
+</sc-for>
+</div>
+<div style="flex: 999 1 520px; min-width: 0; background: #0E131D; border: 1px solid #1F2836; display: flex; flex-direction: column">
+<div style="height: 280px; border-bottom: 1px solid #1F2836; display: flex; align-items: center; justify-content: center; color: #8D99AB; font-family: 'Roboto Mono', monospace; font-size: 12px; text-align: center; padding: 16px">[{{sel.name}} 장비 실사 · 3D 렌더]</div>
+<div style="padding: 36px; display: flex; flex-direction: column; gap: 18px">
+<span style="font-family: 'Roboto Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #A58BFF">{{sel.tag}}</span>
+<span style="font-size: 34px; font-weight: 700; color: #FFFFFF">{{sel.name}}</span>
+<p style="margin: 0; font-size: 17px; line-height: 1.75; color: #C9D2DF">{{sel.desc}}</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); border-top: 1px solid #1F2836">
+<div style="padding: 16px 16px 0 0; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Roboto Mono', monospace; font-size: 11px; color: #8D99AB">APPLICATION</span><span style="font-size: 14px">{{sel.apps}}</span></div>
+<div style="padding: 16px 16px 0 0; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Roboto Mono', monospace; font-size: 11px; color: #8D99AB">WAFER / SUBSTRATE</span><span style="font-size: 14px">[사양 입력]</span></div>
+<div style="padding: 16px 0 0 0; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Roboto Mono', monospace; font-size: 11px; color: #8D99AB">KEY METRIC</span><span style="font-size: 14px">[성능 수치 입력]</span></div>
+</div>
+<a href="{{sel.href}}" style="align-self: flex-start; margin-top: 8px; display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border: 1px solid #A58BFF; color: #FFFFFF; font-size: 15px; font-weight: 500">제품 상세 보기 →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="technology" style="border-bottom: 1px solid #1F2836">
+<div style="max-width: 1320px; margin: 0 auto; padding: 120px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 56px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<span style="font-family: 'Roboto Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #A58BFF">// CORE TECHNOLOGY</span>
+<h2 style="margin: 0; font-size: clamp(32px, 3.6vw, 52px); line-height: 1.15; font-weight: 300; letter-spacing: -0.02em; color: #FFFFFF">한 번의 식각이<br><span style="font-weight: 700">완성되기까지.</span></h2>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #3A4659">
+<sc-for list="{{steps}}" as="s" hint-placeholder-count="5">
+<button style="{{s.style}}" onClick="{{s.pick}}"><span style="font-family: 'Roboto Mono', monospace; font-size: 13px; color: #A58BFF; width: 36px; text-align: left">{{s.no}}</span><span>{{s.title}}</span></button>
+</sc-for>
+</div>
+</div>
+<div style="background: #0E131D; border: 1px solid #1F2836; display: flex; flex-direction: column">
+<div style="height: 340px; border-bottom: 1px solid #1F2836; display: flex; align-items: center; justify-content: center; color: #8D99AB; font-family: 'Roboto Mono', monospace; font-size: 12px; text-align: center; padding: 16px">[플라즈마 챔버 단면 애니메이션 · STEP {{step.no}}]</div>
+<div style="padding: 36px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #A58BFF">STEP {{step.no}} / 05</span>
+<span style="font-size: 28px; font-weight: 700; color: #FFFFFF">{{step.title}}</span>
+<p style="margin: 0; font-size: 17px; line-height: 1.75; color: #C9D2DF">{{step.desc}}</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="border-bottom: 1px solid #1F2836">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))">
+<div style="padding: 56px 24px 56px 0; display: flex; flex-direction: column; gap: 10px; border-right: 1px solid #1F2836"><span style="font-size: 60px; font-weight: 300; letter-spacing: -0.03em; color: #FFFFFF">2000</span><span style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #8D99AB">FOUNDED · 설립</span></div>
+<div style="padding: 56px 24px; display: flex; flex-direction: column; gap: 10px; border-right: 1px solid #1F2836"><span style="font-size: 60px; font-weight: 300; letter-spacing: -0.03em; color: #FFFFFF">267</span><span style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #8D99AB">EMPLOYEES · 임직원</span></div>
+<div style="padding: 56px 24px; display: flex; flex-direction: column; gap: 10px; border-right: 1px solid #1F2836"><span style="font-size: 60px; font-weight: 300; letter-spacing: -0.03em; color: #FFFFFF">[00]</span><span style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #8D99AB">PATENTS · 특허</span></div>
+<div style="padding: 56px 0 56px 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 60px; font-weight: 300; letter-spacing: -0.03em; color: #FFFFFF">3</span><span style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #8D99AB">SITES · 안성 · 천안 · 파주</span></div>
+</div>
+</section>
+
+<section style="background: #F3F4F7; color: #0E131D">
+<div style="max-width: 1320px; margin: 0 auto; padding: 120px 32px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<h2 style="margin: 0; font-size: clamp(32px, 3.6vw, 48px); font-weight: 300; letter-spacing: -0.02em">Newsroom</h2>
+<a href="#" style="font-size: 15px; font-weight: 500; padding-bottom: 4px; border-bottom: 1px solid #0E131D">전체 보기 →</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0; border-top: 1px solid #0E131D">
+<a href="#" style="padding: 28px 28px 28px 0; display: flex; flex-direction: column; gap: 14px; border-right: 1px solid #C8CED8; min-height: 200px"><span style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #4A3A9A">VIDEO · [YYYY.MM.DD]</span><span style="font-size: 21px; font-weight: 700; line-height: 1.4">ICD Etch Technology 브랜드 영상 공개</span></a>
+<a href="#" style="padding: 28px; display: flex; flex-direction: column; gap: 14px; border-right: 1px solid #C8CED8; min-height: 200px"><span style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #4A3A9A">PRESS · [YYYY.MM.DD]</span><span style="font-size: 21px; font-weight: 700; line-height: 1.4">[최신 보도자료 제목]</span></a>
+<a href="#" style="padding: 28px 0 28px 28px; display: flex; flex-direction: column; gap: 14px; min-height: 200px"><span style="font-family: 'Roboto Mono', monospace; font-size: 12px; color: #4A3A9A">EVENT · [YYYY.MM.DD]</span><span style="font-size: 21px; font-weight: 700; line-height: 1.4">[전시회 참가 소식]</span></a>
+</div>
+</div>
+</section>
+
+<section style="border-bottom: 1px solid #1F2836">
+<div style="max-width: 1320px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 32px">
+<h2 style="margin: 0; font-size: clamp(32px, 4vw, 56px); line-height: 1.12; font-weight: 300; letter-spacing: -0.03em; color: #FFFFFF">당신의 다음 공정,<br><span style="font-weight: 700; color: #B9A4FF">ICD와 시작하세요.</span></h2>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 32px; background: #A58BFF; color: #07090F; font-weight: 700; font-size: 16px">엔지니어 상담 요청 →</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 32px; border: 1px solid #3A4659; color: #FFFFFF; font-size: 16px">회사소개서 PDF</a>
+</div>
+</div>
+</section>
+
+<footer style="color: #8D99AB">
+<div style="max-width: 1320px; margin: 0 auto; padding: 64px 32px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 36px; font-size: 14px; line-height: 2">
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 24px; font-weight: 700; letter-spacing: 0.1em; color: #FFFFFF">ICD</span><span>(주)아이씨디</span><span>경기도 안성시 대덕면 만세로 274</span></div>
+<div style="display: flex; flex-direction: column"><span style="color: #FFFFFF; font-weight: 500">제품</span><a href="#">반도체 전공정</a><a href="#">첨단 패키징</a><a href="#">디스플레이</a></div>
+<div style="display: flex; flex-direction: column"><span style="color: #FFFFFF; font-weight: 500">회사</span><a href="#">회사소개</a><a href="#">기술</a><a href="#">뉴스룸</a><a href="#">인재채용</a></div>
+<div style="display: flex; flex-direction: column"><span style="color: #FFFFFF; font-weight: 500">투자정보</span><a href="#">공시</a><a href="#">재무정보</a><a href="#">주가정보</a></div>
+</div>
+<div style="max-width: 1320px; margin: 0 auto; padding: 24px 32px; border-top: 1px solid #1F2836; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: 'Roboto Mono', monospace; font-size: 12px">
+<span>© ICD CO., LTD.</span>
+<span>개인정보처리방침 · 이용약관 · 사이트맵</span>
+</div>
+</footer>
+</div></template>
+<a class="icd-draft" href="index.html" aria-label="시안 목록으로">디자인 시안 · 실제 사이트 아님 <span>시안 목록</span></a>
+<style>
+.icd-draft{position:fixed;left:max(12px,env(safe-area-inset-left,0px));bottom:max(12px,env(safe-area-inset-bottom,0px));z-index:9999;display:inline-flex;align-items:center;gap:10px;min-height:40px;padding:0 6px 0 14px;border-radius:999px;background:rgba(2,8,18,.86);color:#E6EDF6 !important;font:500 12px/1 'Roboto','Noto Sans KR',sans-serif;letter-spacing:.02em;text-decoration:none;box-shadow:0 4px 18px rgba(0,0,0,.25);backdrop-filter:blur(6px)}
+.icd-draft span{display:inline-flex;align-items:center;min-height:30px;padding:0 12px;border-radius:999px;background:#00AEEF;color:#020812;font-weight:700}
+.icd-draft:focus-visible{outline:2px solid #00AEEF;outline-offset:3px}
+</style>
+<script src="js/morphdom-umd.min.js"></script>
+<script src="js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { market: 0, product: 0, step: 0 };
+}
+renderVals() {
+var markets = [
+{ label: 'Front-End', items: [
+{ code: 'FE-01', name: 'NexPion™', tag: 'FRONT-END · HAR ETCH', short: 'R-wave Enhanced Plasma Etcher', desc: '초고종횡비 Trench · Contact · Via Hole을 깊고 곧게 식각하는 플라즈마 에처입니다.', apps: 'GAA · 3D DRAM · HBM', href: '#' },
+{ code: 'FE-02', name: 'ALE Series', tag: 'FRONT-END · ATOMIC LAYER ETCH', short: '원자층 식각 플랫폼', desc: 'High Throughput과 Atomic Scale Control을 함께 구현해 차세대 소자의 원자 단위 식각을 지원합니다.', apps: '차세대 Memory · Logic', href: '#' }
+]},
+{ label: 'Advanced Package', items: [
+{ code: 'AP-01', name: 'Cu Ion Milling', tag: 'ADVANCED PACKAGE · CU ETCH', short: '고밀도 플라즈마 Cu 식각', desc: '독자 플라즈마 소스를 기반으로 Cu Seed Layer와 인터포저 배선을 정밀하게 식각합니다.', apps: 'Cu Seed · Si Interposer · OLEDoS', href: 'cu-ion-milling.html' },
+{ code: 'AP-02', name: 'BDF Etch', tag: 'ADVANCED PACKAGE · SUBSTRATE', short: '패키지 기판용 식각', desc: '패키지 기판 공정을 위한 식각 솔루션입니다. [BDF 정식 명칭 · 공정 설명]', apps: 'Etch Rate · Uniformity · Throughput', href: '#' }
+]},
+{ label: 'Display', items: [
+{ code: 'DP-01', name: 'ICP Dry Etcher', tag: 'DISPLAY · DRY ETCH', short: 'OLED 양산용 건식각', desc: 'AMOLED · LCD 양산 라인에서 대면적 기판을 균일하게 건식각하는 ICP 장비입니다.', apps: 'AMOLED · LTPS · TFT-LCD', href: '#' },
+{ code: 'DP-02', name: 'Plasma Asher', tag: 'DISPLAY · PLASMA TREATMENT', short: '증착 전 플라즈마 처리', desc: '증착 공정 전에 유기물을 제거하고 표면을 처리해 수율을 높이는 플라즈마 애싱 시스템입니다.', apps: 'AMOLED · [적용 공정]', href: '#' }
+]}
+];
+var stepsData = [
+{ no: '01', title: 'Process Gas', desc: '목표 막질에 맞춘 공정 가스를 진공 챔버에 정밀한 유량으로 주입합니다.' },
+{ no: '02', title: 'RF Power', desc: 'RF 전력을 인가해 가스를 이온화하고 플라즈마를 점화합니다.' },
+{ no: '03', title: 'High Density Plasma', desc: 'ICD 고유의 플라즈마 소스로 넓은 면적에 균일한 고밀도 플라즈마를 형성합니다.' },
+{ no: '04', title: 'Ion Energy Control', desc: '바이어스로 이온 에너지와 방향성을 제어해 깊고 곧은 프로파일을 만듭니다.' },
+{ no: '05', title: 'Precision Etch', desc: '원하는 막만 선택적으로 제거하고 하부 막은 보호하는, 원자 단위의 식각이 완성됩니다.' }
+];
+var self = this;
+var m = markets[this.state.market];
+var pIdx = Math.min(this.state.product, m.items.length - 1);
+var tabBase = 'min-height: 48px; padding: 0 22px; border: 0; cursor: pointer; font-size: 14px; font-weight: 500; ';
+var tabs = markets.map(function (mk, i) {
+return { label: mk.label, style: tabBase + (i === self.state.market ? 'background: #A58BFF; color: #07090F' : 'background: transparent; color: #C9D2DF'), pick: function () { self.setState({ market: i, product: 0 }); } };
+});
+var itemBase = 'display: flex; flex-direction: column; align-items: flex-start; gap: 8px; text-align: left; padding: 24px 20px; border: 0; border-bottom: 1px solid #1F2836; cursor: pointer; color: #FFFFFF; ';
+var products = m.items.map(function (p, i) {
+return { code: p.code, name: p.name, short: p.short, style: itemBase + (i === pIdx ? 'background: #161B30; box-shadow: inset 3px 0 0 #A58BFF' : 'background: transparent'), pick: function () { self.setState({ product: i }); } };
+});
+var stepBase = 'display: flex; align-items: center; gap: 16px; min-height: 60px; padding: 0 4px; border: 0; border-bottom: 1px solid #1F2836; background: transparent; cursor: pointer; font-size: 18px; text-align: left; ';
+var steps = stepsData.map(function (s, i) {
+return { no: s.no, title: s.title, style: stepBase + (i === self.state.step ? 'color: #FFFFFF; font-weight: 700' : 'color: #8D99AB; font-weight: 400'), pick: function () { self.setState({ step: i }); } };
+});
+if (!this.videoRef) {
+this.videoRef = function (el) { if (el) { el.muted = true; el.loop = true; el.playsInline = true; var pr = el.play(); if (pr && pr.catch) { pr.catch(function () {}); } } };
+}
+return { tabs: tabs, products: products, sel: m.items[pIdx], steps: steps, step: stepsData[this.state.step], videoRef: this.videoRef };
+}
+}
+DCLite.mount(Component, document.getElementById('dc-root'), document.getElementById('dc-tpl'));
+</script>
+</body>
+</html>
